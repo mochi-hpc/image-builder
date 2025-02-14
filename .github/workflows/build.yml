@@ -3,7 +3,8 @@ name: Build and push to Spack build cache
 on:
   workflow_dispatch: {}
   push:
-  - "spack.yaml"
+    paths:
+      - "spack.yaml"
 
 jobs:
   build:
