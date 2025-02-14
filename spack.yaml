@@ -1,6 +1,8 @@
 spack:
   specs:
   - mochi-margo@0.19.0
+  - mofka@0.5.2 +python +benchmark +kafka +mpi
+  - python@3.10.16
   view:
     default:
       root: /opt/view
