@@ -1,0 +1,27 @@
+spack:
+  specs:
+  - mochi-margo@0.19.0
+  view:
+    default:
+      root: /opt/view
+      projections:
+        gcc-runtime: '{hash}'
+        all: ''
+  packages:
+    all:
+      require: 'target=x86_64_v3'
+  concretizer:
+    unify: true
+    reuse: true
+  modules:
+    prefix_inspections:
+      lib: [LD_LIBRARY_PATH]
+      lib64: [LD_LIBRARY_PATH]
+  mirrors:
+    mochi-buildcache:
+      url: oci://ghcr.io/mochi-hpc/mochi-spack-buildcache
+      signed: false
+  config:
+    install_tree:
+      root: /opt/spack
+      padded_length: 128
