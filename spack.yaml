@@ -3,7 +3,7 @@ spack:
   - mofka@0.5.3 +python +benchmark +kafka +mpi
   - cuda@12.2.0
 #  - py-dask@2024.7.1
-  - python@3.11.9
+#  - python@3.11.9
   view:
     default:
       root: /opt/view
