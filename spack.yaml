@@ -1,7 +1,8 @@
 spack:
   specs:
-  - mofka@0.6.0 +python +benchmark +kafka +mpi
+  - mofka@0.6.0 +python +mpi
   - python@3.10.16
+  - mochi-bedrock ~space
   view:
     default:
       root: /opt/view
