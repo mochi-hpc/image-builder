@@ -1,6 +1,6 @@
 spack:
   specs:
-  - mofka@0.6.1 +python +mpi
+  - mofka@0.6.2 +python +mpi
   - python@3.10.16
   - mochi-bedrock ~space
   view:
